@@ -1,0 +1,50 @@
+{
+  "name": "anirecc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.21",
+    "@types/jsdom": "^16.2.3",
+    "@types/node-fetch": "^2.5.7",
+    "@types/puppeteer": "^3.0.1",
+    "@types/ws": "^7.2.6",
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "howlongtobeat": "^1.2.1",
+    "jsdom": "^16.3.0",
+    "keyv": "^4.0.1",
+    "newsapi": "^2.4.0",
+    "node-fetch": "^2.6.0",
+    "puppeteer": "^5.2.1",
+    "request": "^2.88.2",
+    "trakt.tv": "^8.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {
+    "@types/keyv": "^3.1.1",
+    "@types/node": "^14.0.23",
+    "@types/request": "^2.48.5",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-typescript-prettier": "^3.1.0",
+    "husky": "^4.2.5",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node build/app.js",
+    "dev": "yarn build && nodemon",
+    "format": "prettier --write src/**/*.ts",
+    "lint": "eslint --fix src/**/*.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": ""
+    }
+  }
+}
